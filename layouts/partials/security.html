@@ -1,0 +1,32 @@
+
+{{ with .Site.GetPage "security" }}
+<section id="security" class="py-20 bg-bg-secondary dark:bg-bg-secondary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h2>
+    <p class="text-center text-gray-700 dark:text-text-secondary mb-12 max-w-3xl mx-auto">{{ .Params.intro }}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {{ range .Params.items }}
+      <div class="bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+        <div class="flex items-center mb-4">
+          {{ if eq .icon "globe" }}
+          <i class="fas fa-globe text-second dark:text-second-light mr-3 text-2xl"></i>
+          {{ else if eq .icon "flag" }}
+          <i class="fas fa-flag text-second dark:text-second-light mr-3 text-2xl"></i>
+          {{ else if eq .icon "certificate" }}
+          <i class="fas fa-certificate text-second dark:text-second-light mr-3 text-2xl"></i>
+          {{ end }}
+          <h3 class="text-lg font-semibold text-text-primary dark:text-text-primary">{{ .title }}</h3>
+        </div>
+        <p class="text-gray-700 dark:text-text-secondary mb-4">{{ .description | safeHTML }}</p>
+        {{ if .link }}
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white font-medium hover:underline">
+          <i class="fas fa-external-link-alt mr-1 text-sm"></i>{{ .link_text }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

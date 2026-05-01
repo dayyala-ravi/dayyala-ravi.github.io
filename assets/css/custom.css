@@ -1,0 +1,30 @@
+/* hero layout fixes */
+
+.hero-profile-ring {
+    width: 20rem !important;
+    height: 20rem !important;
+}
+
+@media (min-width: 768px) {
+    .hero-profile-ring {
+        width: 24rem !important;
+        height: 24rem !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-profile-ring {
+        width: 32rem !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+/* center allignment */
+.hero-inner-row {
+    align-items: center !important;
+}
+
+.hero-profile-col {
+    margin-top: 0 !important;
+}

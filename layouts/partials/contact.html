@@ -1,0 +1,47 @@
+<section id="contact" class="py-12 bg-bg dark:bg-bg border-border-primary" data-animate>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">{{ i18n "contactFormLabel" }}</h2>
+
+        <div class="flex justify-center">
+            <div class="w-full max-w-3xl">
+                {{ with .Site.GetPage "contact" }}
+                <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary h-full card-hover">
+                    <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">
+                        {{ i18n "contactInformation" }}
+                    </h3>
+                    <p class="mb-6 text-gray-700 dark:text-text-secondary"> {{ .Params.intro }}</p>
+                    <div class="markdown-content text-gray-700 dark:text-text-secondary">
+                        {{ .Params.Content | markdownify }}
+                    </div>
+                    <div class="space-y-2">
+                        {{ if .Site.Params.email }}
+                        <div class="flex items-center gap-3">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <a href="mailto:{{ .Site.Params.email }}" class="text-primary dark:text-white">{{ .Site.Params.email }}</a>
+                        </div>
+                        {{ end }}
+                        {{ if .Site.Params.linkedin_url }}
+                        <div class="flex items-center gap-3">
+                            <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <a href="{{ .Site.Params.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white">{{ .Site.Params.linkedin_text }}</a>
+                        </div>
+                        {{ end }}
+                        {{ if .Site.Params.github_url }}
+                        <div class="flex items-center gap-3">
+                            <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+                            <a href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white">{{ .Site.Params.github_text }}</a>
+                        </div>
+                        {{ end }}
+                        {{ if .Site.Params.hero_location }}
+                        <div class="flex items-center gap-3">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <span class="text-gray-700 dark:text-text-tertiary">{{ .Site.Params.hero_location }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

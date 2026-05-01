@@ -1,0 +1,123 @@
+[read_more]
+other = "Read More"
+
+[by]
+other = "by"
+
+[posted_on]
+other = "Posted on"
+
+[tags]
+other = "Tags"
+
+[contact]
+other = "Contact"
+
+[contactFormLabel]
+other = "Let's Connect"
+
+[contactFormLableNameLable]
+other = "Name"
+
+[contactFormLableEmailLable]
+other = "Email"
+
+[contactFormLableMessageLabel]
+other = "Message"
+
+[contactFormLabelSubjectLabel]
+other = "Subject"
+
+[contactFormSendBtnLabel]
+other = "Send"
+
+[send]
+other = "Send"
+
+[skills]
+other = "Skills"
+
+[experiance]
+other = "Experiance"
+
+[about]
+other = "About"
+
+[blog]
+other = "Blog"
+
+[technical]
+other = "Tech Stack"
+
+[language]
+other = "Language"
+
+[getInTouch]
+other = "Get in Touch"
+
+[learnMore]
+other = "Learn More"
+
+[contactInformation]
+other = "Contact Information"
+
+[priorityContact]
+other = "Priority Contact"
+
+[aboutMe]
+other = "About Me"
+
+[connectOnLinkedIn]
+other = "Connect on LinkedIn"
+
+[quickFacts]
+other = "Quick Facts"
+
+[aboutName]
+other = "About"
+
+[relatedContent]
+other = "Related Content"
+
+[interests]
+other = "Interests"
+
+[languages]
+other = "Languages"
+
+[helloIm]
+other = "Hello, I'm"
+
+[viewCV]
+other = "View CV"
+
+[downloadResume]
+other = "Download Resume"
+
+[keyAchievements]
+other = "Key Achievements"
+
+[demoImageAlt]
+other = "Demo Image"
+
+[gallaryNotFound]
+other = "Gallery not found"
+
+[viewOnGithub]
+other = "View on Github"
+
+[pageNotFound]
+other = "Page not found"
+
+[pageNotFoundSubtitle]
+other = "The page you are looking for does not exist."
+
+[goHome]
+other = "Go Home"
+
+[certainlyNotHere]
+other = "This is not the page you are looking for."
+
+[fullscreen]
+other = "Fullscreen"
+

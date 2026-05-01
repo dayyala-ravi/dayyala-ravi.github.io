@@ -1,0 +1,114 @@
+<style>
+/* Hero layout: bigger profile pic and proper alignment */
+.hero-profile-ring {
+  width: 20rem !important;
+  height: 20rem !important;
+}
+@media (min-width: 768px) {
+  .hero-profile-ring {
+    width: 24rem !important;
+    height: 24rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-profile-ring {
+    width: 32rem !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+  }
+  .hero-inner-row {
+    align-items: center !important;
+  }
+  .hero-profile-col {
+    margin-top: 0 !important;
+    justify-content: center !important;
+  }
+}
+/* Ensure broken/placeholder images still show the ring properly */
+.hero-profile-ring img {
+  background: linear-gradient(135deg, #1e3a5f, #0f172a);
+}
+</style>
+
+{{ $pexelsQueries := .Site.Params.pexels.queries }}
+{{ if not $pexelsQueries }}
+  {{ $pexelsQueries = slice "default" }}
+{{ end }}
+<div id="pexels-config" data-queries="{{ $pexelsQueries | jsonify }}" data-pexels-api-key="" data-formspree-endpoint="{{ .Site.Params.formspreeendpoint | default "" }}" style="display: none;"></div>
+<script>
+  // Override: disable Pexels entirely, use a forced dark hero background
+  window.PEXELS_API_KEY = '';
+  window.FORMSPREE_ENDPOINT = (function() {
+    var el = document.getElementById('pexels-config');
+    return el ? el.getAttribute('data-formspree-endpoint') || '' : '';
+  })();
+  window.PEXELS_QUERIES = [];
+
+  // Prevent the theme's PexelsBackground class from running
+  window.PexelsBackground = function() {};
+
+  (function applyStaticHero() {
+    function setHero() {
+      var hero = document.querySelector('.hero-section');
+      if (!hero) return;
+
+      // Always use a dark hero regardless of light/dark mode
+      hero.style.background = 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 25%, #1a365d 50%, #2d3748 75%, #0f172a 100%)';
+      hero.style.backgroundImage = 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 25%, #1a365d 50%, #2d3748 75%, #0f172a 100%)';
+      hero.classList.remove('gradient-bg');
+
+      // Remove any existing overlays from previous runs
+      hero.querySelectorAll('.static-hero-overlay, .static-hero-grid').forEach(function(el) { el.remove(); });
+
+      // Add color accent overlay
+      var overlay = document.createElement('div');
+      overlay.className = 'static-hero-overlay';
+      overlay.style.cssText = 'position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;pointer-events:none;' +
+        'background-image:radial-gradient(circle at 20% 50%, rgba(59,130,246,0.15) 0%, transparent 50%),' +
+        'radial-gradient(circle at 80% 20%, rgba(16,185,129,0.1) 0%, transparent 50%),' +
+        'radial-gradient(circle at 50% 80%, rgba(139,92,246,0.1) 0%, transparent 50%);';
+      hero.insertBefore(overlay, hero.firstChild);
+
+      // Add subtle grid pattern
+      var grid = document.createElement('div');
+      grid.className = 'static-hero-grid';
+      grid.style.cssText = 'position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;pointer-events:none;opacity:0.04;' +
+        'background-image:linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);' +
+        'background-size:60px 60px;';
+      hero.insertBefore(grid, hero.firstChild);
+
+      // Ensure content stays above
+      var content = hero.querySelector('.max-w-7xl');
+      if (content) {
+        content.style.position = 'relative';
+        content.style.zIndex = '10';
+      }
+
+      // Hide pexels credit
+      var credit = document.getElementById('pexels-credit');
+      if (credit) credit.style.display = 'none';
+    }
+
+    // Apply on DOMContentLoaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setHero);
+    } else {
+      setHero();
+    }
+
+    // Re-apply after window load to override theme's PexelsBackground fallback
+    window.addEventListener('load', function() {
+      setTimeout(setHero, 200);
+    });
+
+    // Watch for dark mode toggles and re-apply to keep hero always dark
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.attributeName === 'class') {
+          setTimeout(setHero, 50);
+        }
+      });
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  })();
+</script>

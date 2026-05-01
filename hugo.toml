@@ -1,0 +1,127 @@
+baseURL = "https://dayyala-ravi.github.io"
+languageCode = "en-us"
+title = "Dayyala Ravi"
+theme = "careercanvas"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        languageName = "English"
+        weight = 1
+        [languages.en.params]
+            tagline = "DevOps Engineer. CI/CD & Kubernetes Practitioner. Building Scalable Microservices. DevSecOps & Offensive Security Enthusiast."
+            hero_description = "DevOps Engineer at HCL Technologies - building CI/CD pipelines with Jenkins & Groovy, deploying Microservices on Docker Swarm & Kubernetes, and implementing Observability with Prometheus, Grafana & Ansible. Recognized with the \"2good\" Award for engineering excellence."
+            hero_location = "Bengaluru, India"
+            collab_tags = ["DevOps", "Cloud Infrastructure", "CI/CD", "Security"]
+            resume_url = "/files/cv-en.pdf"
+
+[build]
+    writeStats = true
+
+[params]
+    name = "Dayyala Ravi"
+    firstName = "Dayyala"
+    lastName = "Ravi"
+    email = "ravi13.dayyala@gmail.com"
+    profile_image = "/images/profile.svg"
+    author = "Dayyala Ravi"
+    og_image = "/images/og-image.png"
+    description = "Dayyala Ravi - DevOps Engineer | Cloud Infrastructure, CI/CD, DevSecOps"
+    linkedin_url = ""
+    linkedin_text = ""
+    github_url = "https://github.com/silent-resistor"
+    github_text = "github.com/silent-resistor"
+    calendly_url = ""
+    calendly_height = "700px"
+    copyright = "Dayyala Ravi"
+    resume_url_en = "/files/cv-en.pdf"
+    resume_label = "View CV"
+    sectionPageMenu = "main"
+    formspreendpoint = "https://formspree.io/f/YOUR_FORM_ID"
+    pexelsapikey = ""
+
+    [[params.social]]
+        icon = "github"
+        url = "https://github.com/silent-resistor"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 2
+
+[[menu.main]]
+    name = "Skills"
+    url = "#skills"
+    weight = 3
+
+[[menu.main]]
+    name = "Experiance"
+    url = "#experiance"
+    weight = 4
+
+[[menu.main]]
+    name = "Tech Stack"
+    url = "#technical"
+    weight = 5
+
+[[menu.main]]
+    name = "Security"
+    url = "#security"
+    weight = 6
+
+[[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 7
+
+[taxonomies]
+    tag = "tags"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+        [markup.highlight]
+            style = "monokai"
+
+[server]
+    [[server.headers]]
+        for = "/**/*.css"
+        [server.headers.values]
+            Content-Type = "text/css"
+
+[security]
+    [security.funcs]
+        getenv = ['^HUGO_', '^CI$']
+
+[params.color_palettes]
+    [[params.color_palettes.palette]]
+        name = "professional"
+        main_color = "#474A51"
+        second_color = "#E52521"
+        third_color = "#3CB043"
+    [[params.color_palettes.palette]]
+        name = "ocean"
+        main_color = "#1E40AF"
+        second_color = "#06B6D4"
+        third_color = "#10B981"
+    [[params.color_palettes.palette]]
+        name = "steel"
+        main_color = "#374151"
+        second_color = "#6B7280"
+        third_color = "#10B981"
+    [[params.color_palettes.palette]]
+        name = "slate"
+        main_color = "#475569"
+        second_color = "#0EA5E9"
+        third_color = "#F97316"
+
+[params.pexels]
+    queries = ["long span bridges", "skyscrappers", "sky and clouds"]
