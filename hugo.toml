@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = false
             hero_description = "DevOps Engineer at HCL Technologies - building CI/CD pipelines with Jenkins & Groovy, deploying Microservices on Docker Swarm & Kubernetes, and implementing Observability with Prometheus, Grafana & Ansible. Recognized with the \"2good\" Award for engineering excellence."
             hero_location = "Bengaluru, India"
             collab_tags = ["DevOps", "Cloud Infrastructure", "CI/CD", "Security"]
-            resume_url = "/files/cv-en.pdf"
+            resume_url = "/files/DayyalaRavi_DevOps_3Yrs.pdf"
 
 [build]
     writeStats = true
@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
     firstName = "Dayyala"
     lastName = "Ravi"
     email = "ravi13.dayyala@gmail.com"
-    profile_image = "/images/profile.svg"
+    profile_image = "/images/profile.jpg"
     author = "Dayyala Ravi"
     og_image = "/images/og-image.png"
     description = "Dayyala Ravi - DevOps Engineer | Cloud Infrastructure, CI/CD, DevSecOps"
