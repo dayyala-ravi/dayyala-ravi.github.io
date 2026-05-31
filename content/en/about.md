@@ -33,6 +33,8 @@ quickfacts:
     - icon: "shield"
       title: "Certifications"
       value: |
+        - <a href="https://www.credly.com/earner/earned/badge/6fc574cf-1eb8-4ed6-8019-f3350e335901">AWS Certified Cloud Practitioner </a>
+        - <a href="">AWS Certified AI Practitioner (Expected: 2nd August, 2026) </a>
         - <a href="https://www.credly.com/badges/7f93d2b8-b96f-4a09-a68f-a8c7b01f201d/public_url">Kubernetes</a> (O'Reilly)
         - <a href="https://www.credly.com/badges/5d5ed930-39c3-40cf-a8b0-563d83906ddc">Docker</a> (O'Reilly)
         - <a href="https://www.credly.com/badges/f2061fba-086e-4f39-aa3c-e30aab6b63c0">Ansible</a> (O'Reilly)
