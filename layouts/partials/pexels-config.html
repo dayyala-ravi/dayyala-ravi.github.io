@@ -34,7 +34,7 @@
 {{ if not $pexelsQueries }}
   {{ $pexelsQueries = slice "default" }}
 {{ end }}
-<div id="pexels-config" data-queries="{{ $pexelsQueries | jsonify }}" data-pexels-api-key="" data-formspree-endpoint="{{ .Site.Params.formspreeendpoint | default "" }}" style="display: none;"></div>
+<div id="pexels-config" data-queries="{{ $pexelsQueries | jsonify }}" data-pexels-api-key="" data-formspree-endpoint="{{ .Site.Params.formspreendpoint | default "" }}" style="display: none;"></div>
 <script>
   // Override: disable Pexels entirely, use a forced dark hero background
   window.PEXELS_API_KEY = '';

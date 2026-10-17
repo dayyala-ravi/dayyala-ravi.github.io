@@ -29,14 +29,13 @@ defaultContentLanguageInSubdir = false
     author = "Dayyala Ravi"
     og_image = "/images/og-image.png"
     description = "Dayyala Ravi - DevOps Engineer | Cloud Infrastructure, CI/CD, DevSecOps"
-    linkedin_url = ""
-    linkedin_text = ""
+    linkedin_url = "https://www.linkedin.com/in/dayyala-ravi/"
+    linkedin_text = "linkedin.com/in/dayyala-ravi"
     github_url = "https://github.com/silent-resistor"
     github_text = "github.com/silent-resistor"
     calendly_url = ""
     calendly_height = "700px"
     copyright = "Dayyala Ravi"
-    resume_url_en = "/files/cv-en.pdf"
     resume_label = "View CV"
     sectionPageMenu = "main"
     formspreendpoint = "https://formspree.io/f/YOUR_FORM_ID"
@@ -63,7 +62,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
     name = "Experience"
-    url = "#Experience"
+    url = "#experience"
     weight = 4
 
 [[menu.main]]
@@ -124,4 +123,4 @@ defaultContentLanguageInSubdir = false
         third_color = "#F97316"
 
 [params.pexels]
-    queries = ["long span bridges", "skyscrappers", "sky and clouds"]
+    queries = ["long span bridges", "skyscrapers", "sky and clouds"]

@@ -2,18 +2,17 @@
 title: "Security Research"
 type: "homepage"
 intro: >-
-    Offensive security practitioner and continuous learner — documenting CTF write-up, building exploits, and advancing through security certification tracks.
-
+    Bridging DevOps and offensive security - applying hands-on attack techniques and hardening practices to build more resilient infrastructure.
 items: 
   - icon: "globe"
-    title: "Offensive Security Platform"
-    description: "Developed and actively maintain a personal knowledge-base documenting CTF write-ups, vulnerability research, and offensive security concepts."
+    title: "Security Research Platform"
+    description: "Actively develop and maintain a technical knowledge-base documenting vulnerabilities, research, secure system architecture, and Linux/Windows server hardening techniques."
     link: "https://silent-resistor.github.io"
     link_text: "silent-resistor.github.io"
 
   - icon: "flag"
     title: "Capture The Flag (CTF)"
-    description: "Actively solving technical challenges on platforms like OverThewire and Root-Me — developing hands-on exploits for Linux environments and windows architectures."
+    description: "Regularly solving complex challenges on OverThewire, Root-Me and TryHackMe - building hands-on exploit across Linux and Windows environments."
     
   - icon: "certificate"
     title: "TryHackMe Certifications"

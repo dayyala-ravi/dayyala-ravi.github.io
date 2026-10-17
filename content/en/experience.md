@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-    Passionate about DevOps and cloud infrastructure: building resilient systems, automating pipelines, and driving secure operations.
+    Hands-on experience in architecting cloud-native infrastructure, implementing DevSecOps practices, and leading end-to-end delivery of production systems.
 resume_downloads:
     - lang: en
       label: English
@@ -16,12 +16,14 @@ positions:
       location: "Bengaluru, India"
       company_description: ""
       bullet_points:
-        - "Built greenfield **CI/Cd infrastructure** with Jenkins, Groovy Pipeline-as-Code, and Kubernetes ephemeral agents for all new product builds."
-        - "Engineered a **highly available microservices app** (Flask, Angular, Redis) deployed on Docker Swarm from scratch"
-        - "Deployed **Prometheus & Grafana observability** across on-prem infrastructure; automated maintaiance with Ansible playbooks"
-        - "Enforced **secure SDLC** — migrated manual builds to automated pipelines, integrated JFrog Artifactory for artifact management."
-        - "Led **Python 2 → 3.13 migration**, refactored legacy apps with Zookeeper and Nginx reverse proxies."
+        - "Designed and deployed greenfield **CI/CD pipelines** using Jenkins with Groovy and Kubernetes ephemeral agents, reducing manual build times while supporting legacy Bamboo environments."
+        - "Engineered a **highly available licensing application** from scratch using a microservices architecture (Flask, Angular, Redis) and orchestrated deployment via Docker Swarm."
+        - "Deployed **Prometheus & Grafana** for comprehensive on-prem monitoring; Engineered ansible playbooks for server maintainance, resourc cleanup, and SSL/TLS certificate rotations."
+        - "Enforced **secure development lifecycle** — by migrating manual builds to automated pipelines, integrating JFrog Artifactory to remove binary blobs from source control."
+        - "Spearheaded **Python 2 --> 3.13 migration**, refactored codebases with modern design patterns, integrating Zookeeper for distributed configuration and Nginx reverse proxies."
         - "Set up **event-driven alerting** with SNMP traps, custom daemons, and Postfix notifications."
-        - "Awarded the **\"2good\"** for sustained engineering excellence over a two-year period."
+        - "Leveraged **AI coding assistants** and deployed open source models (Qwen 2.5 Coder) via LM Studio to automate specialized infrastructure tasks and accelerate proxy configuration."
+        - "Recognized with the **\"2good\"** Award for sustained engineering excellence, rapid problem-solving, and outstanding contributions over a two-year period."
+
 ---
 

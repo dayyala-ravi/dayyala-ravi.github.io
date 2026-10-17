@@ -1,33 +1,39 @@
+
 ---
 title: "Skills"
 type: "homepage"
 intro: >-
-    DevOps engineering with strong hands-on experience in CI/CD automation, cloud infrastructure, container orchestration, and offensive security practices.
+    A strong engineering background paired with hands-on expertise across the full DevOps lifecycle — from CI/CD pipelines and cloud-native infrastructure to security hardening and AI-driven automation.
 
 domains:
   - icon: "code"
     title: "CI/CD & Automation"
-    description: "Jenkins, Github Actions, Bamboo, Ansible, Bitbucket, Gradle, Maven, Groovy, Makefiles, and AI/ML Ops — building fully automated, reproducible build and deployment pipelines."
+    description: "Jenkins, GitHub Actions, Bamboo, Ansible, Bitbucket, Gradle, Maven, Groovy, Makefiles, SonarQube, Jira, and Confluence — building fully automated, reproducible build and deployment pipelines."
     devicon_class: "devicon-jenkins-line colored"
 
   - icon: "cloud"
-    title: "Cloud & Infrastructure"
-    description: "Kubernetes, Docker, Docker Swarm, OpenStack, KVM/QEMU, AWS, and Terraform — orchestrating scalable, highly available infrastructure across on-premise and cloud environments."
+    title: "Cloud & Containerization"
+    description: "Kubernetes, Helm, Docker, Docker Swarm, KVM/QEMU, AWS (EC2, S3, VPC, IAM, Lambda, ECS, EKS), and Terraform — orchestrating scalable, highly available infrastructure across on-prem and cloud environments."
     devicon_class: "devicon-kubernetes-plain colored"
 
   - icon: "tools"
     title: "Infrastructure & Monitoring"
-    description: "Prometheus, Grafana, Ngnix, Zookeeper, Redis, MongoDB, JFrog Artifactory — implementing comprehensive observability and reliable infrastructure services."
+    description: "Prometheus, Grafana, Nginx, Zookeeper, Redis, MongoDB, SysInternals, JFrog Artifactory — implementing comprehensive observability and reliable infrastructure services."
     devicon_class: "devicon-prometheus-original colored"
 
   - icon: "lock"
-    title: "offensive Security & DevSecOps"
-    descritpion: "Webapp pentesting, SAST/DAST, Active Directory exploitation, networking, cryptography, Linux/Windows privilage escalation — security the full SDLC  and building defense-in-depth."
+    title: "Security & DevSecOps"
+    description: "Web App Security Assessments, SAST/DAST, Active Directory Hardening, Networking, Cryptography, Linux/Windows Server Hardening — securing the full SDLC and building defense-in-depth."
     devicon_class: "devicon-linux-plain colored"
 
   - icon: "brain"
-    title: "Scripting / Development"
-    descritption: "Python, Bash, Powershell, Java, Javascript, Django, Flask, LangChain (RAG) — automating infratructure, building microservices, and integrating AI-driven tooling."
+    title: "Scripting & Development"
+    description: "Python, Bash, PowerShell, Java, JavaScript, Django, Flask, HTML, LaTeX — automating infrastructure, building microservices, and scripting cross-platform solutions."
+    devicon_class: "devicon-python-plain colored"
+
+  - icon: "cpu"
+    title: "AI & LLM Engineering"
+    description: "Local LLMs (Qwen Coder, Hugging Face), Fine-Tuning (LM Studio), Prompt Engineering, RAG Pipelines (LangChain), GitHub Copilot, Devin — accelerating delivery with AI-driven tooling and automation."
     devicon_class: "devicon-python-plain colored"
 
 ---

@@ -2,7 +2,7 @@
 title: "Tech Stack"
 type: "homepage"
 intro: >-
-    Tools and technologies I use daily to build infrastructure, automate pipelines, and secure system end to end.
+    The tools and technologies I work with across the full stack - from container orchestration and cloud provisioning to scripting, observability, and security.
 
 technical_groups:
     - title: "CI/CD & Build tools"
@@ -13,7 +13,7 @@ technical_groups:
           name: "Jenkins"
           devicon_name: "jenkins"
         - icon: "github"
-          name: Github Actions
+          name: "GitHub Actions"
           devicon_name: "github"
         - icon: "bamboo"
           name: "Bamboo"
@@ -27,7 +27,23 @@ technical_groups:
         - icon: "groovy"
           name: "Groovy"
           devicon_name: "groovy"
+        - icon: "maven"
+          name: "Maven"
+          devicon_name: "apache"
 
+    - title: "Containers & Orchestration"
+      icon: "box"
+      color_scheme: "cyan"
+      skills:
+        - icon: "kubernetes"
+          name: "Kubernetes"
+          devicon_name: "kubernetes"
+        - icon: "docker"
+          name: "Docker"
+          devicon_name: "docker"
+        - icon: "helm"
+          name: "Helm"
+          devicon_name: "helm"
     - title: "Cloud & IaC"
       icon: "cloud"
       color_scheme: "green"
@@ -38,9 +54,6 @@ technical_groups:
         - icon: "terraform"
           name: "Terraform"
           devicon_name: "terraform"
-        - icon: "openstack"
-          name: "OpenStack"
-          devicon_name: "openstack"
         - icon: "ansible"
           name: "Ansible"
           devicon_name: "ansible"
@@ -55,7 +68,7 @@ technical_groups:
         - icon: "grafana"
           name: "Grafana"
           devicon_name: "grafana"
-        - icon: "ngnix"
+        - icon: "nginx"
           name: "Nginx"
           devicon_name: "nginx"
         - icon: "redis"
@@ -99,7 +112,7 @@ technical_groups:
           name: "Angular"
           devicon_name: "angular"
     
-    - title: "Developement Tools"
+    - title: "Development Tools"
       icon: "tools"
       color_scheme: "green"
       skills:

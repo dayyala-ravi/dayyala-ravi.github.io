@@ -38,7 +38,7 @@ other = "Send"
 other = "Skills"
 
 [Experience]
-other = "Experience"
+other = "experience"
 
 [about]
 other = "About"
